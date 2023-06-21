@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: rgba(155, 66, 214, 0.1);
+    height: 80px;
+    padding: 16px;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px 0 80px;
+}
+
+.logo {
+    width: 160px;
+}
+
+.ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.nav_link-bk {
+    border: 2px solid #7342d6;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav_link-bk:hover {
+    text-decoration: none;
+}
+
+
+/* 
+
+HEADER
+
+*/
+
+header {
+    background-color: rgba(155, 66, 214, 0.1);
+    height: calc(800px - 80px);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 40px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 56px;
+    color: #7342d6;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 650px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+span {
+    color: #7342d6;
+}
+
+.header-btw {
+    border: none;
+    border-radius: 4px;
+    background-color: #7342d6;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+button:hover {
+    transform: translateY(1px);
+}
+
+
+.header_img-wrapper {
+    z-index: 2;
+}
+
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+}
+
+/* 
+
+MAIN
+
+*/
+
+#highlight {
+    position: relative;
+}
+
+#highlight::before {
+    background: url("./assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 98.7vw;
+    height: 12vw;
+    top: 1px;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-100%);
+}
+
+#highlight::after {
+    background: url("./assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 98.7vw;
+    height: 12vw;
+    bottom: 1px;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(100%) rotate(180deg);
+}
+
+.container {
+    padding: 54px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.highlight-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.highlight-img {
+    border: #7342d66d solid 2px;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7342d6;
+    font-size: 32px;
+}
+
+
+
+.high-header {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 54px;
+}
+
+.highlight-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+
+}
+
+.highlight-head {
+    padding: 16px;
+}
+
+.highlight-para {
+    width: 300px;
+    text-align: center;
+}
+
+
+
+
+#featured{
+    height: 750px;
+    background-color:rgba(155, 66, 214, 0.1) ;
+}
+
+.featured-head{
+    text-align: center;
+    font-size: 40px;
+    /* margin-bottom: 54px; */
+    padding: 32px;
+    
+}
+
+.featured-container{
+    padding: 100px 0;
+}
+
+.featured-row{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 24px;
+}
+
+
+.fea-img-wrapper img{
+    width: 200px;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.book-img:hover{
+transform: scale(1.03);
+cursor: not-allowed;
+}
+
+
+.book-para{
+    font-weight: 500;
+
+}
+
+.book-para:hover{
+    text-decoration: underline;
+    transform:none;
+    cursor: not-allowed;
+}
+
+.stars{
+    color:orange;
+    padding: 2px 0 2px;
+}
+
+.normal-price{
+    color: grey;
+}
+
